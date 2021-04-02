@@ -1,0 +1,22 @@
+.form-gifs {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 2rem 0;
+  
+}
+.input-search {
+  padding: .5rem;
+  width: 15rem;
+  border-radius: .3rem;
+  border-style: none;
+}
+
+.btn-submit {
+  padding: .5rem;
+  border-radius: .3rem;
+  border-style: none;
+  background: rgb(5, 94, 5);
+  color: #fff;
+  margin-left: .5rem;
+
+}

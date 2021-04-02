@@ -1,7 +1,9 @@
 import React from 'react'
+import './styles/root.css'
 import Home from './pages/home'
 import Detail from './pages/detail'
 import ListOfGifs from './pages/listOfGifs'
+
 
 import { GifsContextProvider } from './context/contextGifs'
 import { Route } from 'wouter'

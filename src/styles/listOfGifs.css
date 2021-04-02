@@ -1,0 +1,19 @@
+.name-gif {
+  color: #fff;
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.next-page {
+  margin: 1rem auto;
+  display: block;
+  padding: .5rem;
+  border-radius: .3rem;
+  border-style: none;
+  color: #fff;
+  background: rgb(63, 62, 62);
+  border: 1px solid #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+
+}

@@ -1,0 +1,29 @@
+.container-searches {
+  width: calc(100% - 2rem);
+  margin: 1rem;
+
+}
+.name-trending-search {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: .2rem;
+  padding: .3rem .5rem;
+  display: inline-block;
+  font-family: Open Sans;
+  cursor: pointer;
+}
+
+.container-searches :nth-child(odd) {
+  background: rgb(11, 240, 22);
+}
+.container-searches :nth-child(even) {
+  background: rgb(255, 0, 221);
+}
+.container-searches :nth-child(3n) {
+    background: rgb(17, 0, 255);
+}
+
+.container-searches :nth-child(4n) {
+     background: rgb(151, 34, 230);
+}
+
