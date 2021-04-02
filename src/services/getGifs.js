@@ -1,5 +1,7 @@
-const getGifs = async () => {
-  const api = `https://api.giphy.com/v1/gifs/search?api_key=mfOwuN9UxxhOso3kVH1zxk4EvttJGAio&q=avengers&limit=5&offset=0&rating=g&lang=en`
+import { API_KEY, API_URL } from './links'
+
+const getGifs = async ({ keyword } = {}) => {
+  const api = `${API_URL}/gifs/search?api_key=${API_KEY}&q=${keyword}&limit=5&offset=0&rating=g&lang=en`
   const response = await fetch(api)
   const information = await response.json()
   const { data } = information

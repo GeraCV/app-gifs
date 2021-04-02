@@ -1,6 +1,7 @@
 import React from 'react'
 import Home from './pages/home'
 import Detail from './pages/detail'
+import ListOfGifs from './pages/listOfGifs'
 
 import { GifsContextProvider } from './context/contextGifs'
 import { Route } from 'wouter'
@@ -14,6 +15,10 @@ function App() {
         <Route
           path='/'
           component={Home}
+        />
+        <Route
+          path='/gifs/:keyword'
+          component={ListOfGifs}
         />
         <Route
           path='/gif/:id'

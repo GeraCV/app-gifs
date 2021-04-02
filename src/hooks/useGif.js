@@ -3,13 +3,16 @@ import getGifs from '../services/getGifs'
 import GifsContext from '../context/contextGifs'
 
 
-const useGif = () => {
+const useGif = ({ keyword } = {}) => {
 
   const { gifs, setGifs } = useContext(GifsContext)
 
+  const kw = keyword || localStorage.getItem('lastKeyword') || 'random'
+
   useEffect(() => {
-    getGifs().then(gifs => setGifs(gifs))
-  }, [setGifs])
+    getGifs({ keyword: kw }).then(gifs => setGifs(gifs))
+    localStorage.setItem('lastKeyword', keyword)
+  }, [setGifs, keyword])
 
   return { gifs }
 }
