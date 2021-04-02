@@ -1,8 +1,9 @@
 import React from 'react'
 import useGif from '../hooks/useGif'
 import Gif from '../components/gif'
-import TrendingSearches from '../components/trendingSearches'
+import LazyTrendingSearches from '../components/lazyTrendingSearches'
 import BarSearch from '../components/barSearch'
+import useNearScreen from '../hooks/useNearScreen'
 
 import '../styles/home.css'
 
@@ -29,8 +30,8 @@ const Home = () => {
             })
           }
         </div>
-        <TrendingSearches />
       </div>
+      <LazyTrendingSearches />
     </>
   )
 }
