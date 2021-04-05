@@ -1,7 +1,7 @@
 import { API_KEY, API_URL } from './links'
 
-const getGifs = async ({ keyword } = {}) => {
-  const api = `${API_URL}/gifs/search?api_key=${API_KEY}&q=${keyword}&limit=5&offset=0&rating=g&lang=en`
+const getGifs = async ({ keyword, limit = 5, page = 0 } = {}) => {
+  const api = `${API_URL}/gifs/search?api_key=${API_KEY}&q=${keyword}&limit=${limit}&offset=${page * limit}&rating=g&lang=en`
   const response = await fetch(api)
   const information = await response.json()
   const { data } = information
