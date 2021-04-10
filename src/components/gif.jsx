@@ -13,4 +13,8 @@ const Gif = ({ url, title, id }) => {
   )
 }
 
-export default Gif
+export default React.memo(Gif, (prevProps, nextProps) => {
+  if (prevProps.id == nextProps.id) {
+    return true
+  }
+})

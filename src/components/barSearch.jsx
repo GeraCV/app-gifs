@@ -42,4 +42,4 @@ const BarSearch = () => {
   )
 }
 
-export default BarSearch
+export default React.memo(BarSearch)
